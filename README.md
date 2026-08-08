@@ -50,6 +50,6 @@ count(): Realiza la agregación del conteo de manera altamente optimizada.
 orderBy(): Ordena los resultados de mayor a menor frecuencia.
 
 # 6. Resultados y Rendimiento
-Tras la ejecución en un entorno estándar, se obtuvieron los siguientes tiempos de procesamiento para el dataset de 100 MB:Tiempo RDD: 24.55 segundosTiempo DataFrame: 17.55 segundos.
+Tras la ejecución en un entorno estándar, se obtuvieron los siguientes tiempos de procesamiento para el dataset de 100 MB:Tiempo RDD: 24.75 segundosTiempo DataFrame: 17.67 segundos.
 
 Conclusión Técnica: El uso de DataFrames resultó ser un 40% más rápido. Esto demuestra el impacto negativo de la serialización al intercambiar objetos genéricos de Python con la JVM (Java Virtual Machine) en los RDDs, y valida la eficiencia del motor de ejecución Tungsten y el Optimizador Catalyst al trabajar con DataFrames.
