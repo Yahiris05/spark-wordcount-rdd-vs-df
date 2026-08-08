@@ -1,0 +1,10 @@
+# Ignorar el dataset gigante
+dataset_100MB.txt
+
+# Ignorar las carpetas de resultados de Spark
+output_rdd/
+output_df/
+
+# Ignorar archivos temporales de Python
+__pycache__/
+*.pyc
